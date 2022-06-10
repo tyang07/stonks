@@ -1,11 +1,11 @@
-/* once you adjust the minor details commit & push to github */
-
 body{
     color: #f9faf8;
     display: flex;
     flex-direction: column;
 }
 
+
+/*header code */
 .header {
     display: flex;
     justify-content: space-around;
@@ -46,6 +46,10 @@ a {
     margin-bottom: 8px;
 }
 
+.random {
+    display: flex;
+}
+
 .header,
 .footer{
     background-color: rgb(31, 41, 55);
@@ -68,6 +72,7 @@ button {
 .image {
     width: 250px;
     height: 250px;
+    border-radius: 50%;
 }
 
 img {
@@ -80,6 +85,14 @@ img {
     height: 500px;
 }
 
+
+
+/* main content code */
+.main-content {
+    margin-top: 16px;
+}
+
+
 .content {
     display: flex;
     justify-content: center;
@@ -88,12 +101,40 @@ img {
     color: #1F2937;
 }
 
-.logos {
+.row {
     display: flex;
+    padding: 36px;
+}
+
+.logos {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    padding: 16px 16px;
+    border: 8px;
+}
+
+.random {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap 16px;
+}
+
+.ticker {
+    display: flex;
+    color: #E5E7EB;
+}
+
+.ticker {
+    color: #1F2937;
 }
 
 .sub-content {
     background-color: #E5E7EB;
+    padding: 48px;
 }
 
 .quote {
@@ -106,21 +147,33 @@ img {
 
 .author {
     font-size: 18px;
+    font-weight: 900;
     color: #1F2937;
     display: flex;
     justify-content: flex-end;
+    margin-right: 24px;
 }
 
-.action{
+.sign-up{
     background-color: #3882F6;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 16px;
+    margin: 64px;
+    font-size: 24px;
+    align-items: center;
+    border-radius: 8px;
+    
 }
 
 .shadow {
     border-style: solid;
     border-color: rgb(255, 255, 255);
 }
+
+
+
+/* footer code */
 
 .footer {
     display: flex;
